@@ -1,0 +1,17 @@
+.position1{
+    width: 500;
+    height: 1000;
+}
+.position2{
+    width: 250;
+    height: 150;
+}
+.position3{
+    float:left;
+    width: 50;
+
+}
+.position4{
+    float:right;
+    width: 200;
+}

@@ -1,0 +1,25 @@
+.box{
+    position: relative;}
+@media only screen and (max-width : 1200px){
+    .box{
+        border: 5px solid red;
+        background-color: beige;
+        height: 500px;
+    }
+    }
+    
+    @media only screen and (max-width : 600px){
+        .box{
+            height: 500px;
+            background-color: beige;
+            border: 5px solid blue;
+            
+        } 
+    }
+    @media only screen and (min-width : 1200px){
+        .box{
+            height: 500px;
+            background-color: beige;
+            border: 5px solid green;
+        } 
+    }

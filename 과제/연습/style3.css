@@ -1,0 +1,9 @@
+.content{
+    width: 3200px;
+    height: 1200px;
+    background-color: darkturquoise;
+    display: flex;
+}
+.text{
+    display: flex;
+}

@@ -1,0 +1,112 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    /* margin : auto 좌우 여백이 동일하게 맞춰진다 */
+    margin: auto;
+    width: max-content;
+}
+
+.content ul{
+    padding: 0;
+}
+.content li{
+    /* float 왼쪽 오른쪽으로 붙야서 정렬 */
+    float: left;
+    /* ul, li 태그를 사용하면서 리스트릐 점이나 숫자리스트   */
+    list-style: none;
+}
+
+.content li:last-child{
+    float: none;
+}
+/* content 클래스를 가진 태그의 자식 li채그 자식 item-img 클래스를 가진 태그만 스타일을 
+    li 채그 안쪽르호 자식이면 스타일 적용 */
+.content li .item-img{
+    width: 290px;
+    height: 164;
+    border-radius: 10px;
+
+}
+
+
+
+/* 어떤 채그릐 자식이든 item-img 클래스를 가지고 있는 태그에 스타일을 적용 */
+.item-img{
+
+}
+
+.item{
+    position: relative;
+    width: 290px;
+    height: 277px;
+    margin-right: 20px;
+}
+
+/* .item:last-child{
+    margin-right: 0;
+} */
+.sub-tag{
+    position: absolute;
+    background-color: black;
+    color: white;
+    display: none;
+    font-size: 11px;
+    text-align: center;
+    width: 180px;
+    top: 145px;
+    left: 100px;
+
+}
+/* 가상 선택자 */
+/* hover 속성 마우스가 태그 올려졌을때 */
+/* item태그에 마우스가 올려졌을 때 자식 태그중 sub-tag 클래스를 가지고 있는 태그가 */
+.item:hover .sub-tag{
+
+    display: block;
+}
+.icon{
+    background-image: url(https://yt3.ggpht.com/67lNnmpWgtSDt3NblQNTV9mOmAvlibVMbOZQLl22j6TFGEogPc_2TIJ8XWhZvHWRHmLkOZH2XA=s68-c-k-c0x00ffffff-no-rj);
+    position: absolute;
+    bottom: 66;
+    left: 0;
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 50%;
+}
+.title{
+    width: 250px;
+    font-size: 14px;
+    margin-left: 50px;
+    margin-top: 5px;
+    /* 줄밤꿈 속성을 없애준다. 한줄로 책스츠를 만들어 준다 */
+    white-space: nowrap;
+    /* 부모보다 자식 태그 가 넘어가면 지워버림 */
+    overflow: hidden;
+
+    /* 텍스 */
+    text-overflow: ellipsis;
+}
+.sub-title{
+    font-size: 12px;
+    color: grey;
+    margin: -10px 0 0 50px;
+
+}
+/* 가상 선택자 */
+/* before 가산 뇨소를 추가해 줄 수 있다 */
+/* content 속성이 있어야 한다 */
+.sub-title span::before{
+content: "●";
+}
+
+/* .sub-title span::after{
+    content: "●";
+} */

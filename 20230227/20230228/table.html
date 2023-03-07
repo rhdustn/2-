@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 표를 작성하는데 제일 부모 태그 -->
+    <!-- 
+        ul 태그를 례를 들어
+        <ul> li 태그를 감싸고 있는 ul 태그가 LI태그의 부모이다.
+            li --> 
+              <!-- 테이블에  border-collapse 속성을 추가하면 떨어져 있던 선이 겹쳐진다 -->
+    </ul>
+    <table style="width: 100%; border-collapse: collapse;">
+        <!-- caption 태그로 테이블의 이름을 작성해준다 -->
+        <caption>
+            <h2>입사지원서</h2>
+        </caption>
+        <!-- clum의 줄임말, 열, 세로줄 -->
+        <col style="width : 50px;">
+        <col style="width : 100px;">
+        <col style="width : 200px;">
+        <col style="width : 200px;">
+        <col style="width : 200px;">
+        <tr>
+            <!-- 테이블 제일 위의 이름 테이블 헤더 -->
+            <!-- border 테두리를 바꿔줄 수 리쓴ㄴ 속성 첫번째 선의 굵기 두번째 선의 색 -->
+
+            <th style="border: 1px solid black;">번호</th>
+            <th style="border: 1px solid black;">성별</th>
+            <th style="border: 1px solid black;">나이</th>
+            <th style="border: 1px solid black;">국적</th>
+            <th style="border: 1px solid black;">이름</th>
+        </tr>
+        <tr>style="border: 1px solid black;">1</th>
+            <td style="border: 1px solid black;">
+            <td 고연수</td>
+            <td style="border: 1px solid black;">24</td>
+            <td style="border: 1px solid black;">여자</td>
+            <!-- background-color 태그의 배경색을 지정해준다 
+            text-align : xenter 속성을 주면 텍스트가 완성된다-->
+
+            <td style="border: 1px solid black;">한국</td>
+            
+        </tr>
+        <!-- rowspan 속성은 세로 병합을 시켜준다 -->
+        <tr>
+            <th style="border: 1px solid black;">2</th>
+            <td style="border: 1px solid black;">고연수</td>
+            <td style="border: 1px solid black;">24</td>
+            <td style="border: 1px solid black;">여자</td>
+            <td style="border: 1px solid black;">한국</td>
+            
+        </tr>
+        <!-- colspan 속성은 가로로 병합을 시켜준다 -->
+        <tr>
+
+            <th style="border: 1px solid black;">3</th>
+            <td style="border: 1px solid black;">고연수</td>
+            <td style="border: 1px solid black;">24</td>
+            <td style="border: 1px solid black;">여자</td>
+            <td style="border: 1px solid black;">한국</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
